@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+p,
+li {
+    color: #6c757d;
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+    padding: calc(10px + 1vh);
+}
+
+.navigation-bar {
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navigation-links li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: yellow;
+    display: inline;
+    margin: 15px;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.About-india,
+.famous-landmarks,
+.Indian-Culture,
+.delicious-indian-cuisine {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.Street-Food p {
+    margin-bottom: 15px;
+
+}
+
+img {
+    width: 400px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+}
+
+.footer p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+

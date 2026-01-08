@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: auto;
+    width: 100vw;
+}
+.header{
+    height: 10%;
+    width: 100%;
+    background-color: orange;
+    text-align: center;
+    padding: calc(10px + 1vh);
+}

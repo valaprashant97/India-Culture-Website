@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" author="Vala Prashant" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="ContackUs.css">
 </head>
+
 <body>
     <div class="container">
 
         <Div class="header">
             <h1>Contact Us</h1>
-            <h3><p>Please fill out the form below for any inquiries or to register as a student.</p></h3>
+            <h3>
+                <p>Please fill out the form below for any inquiries or to register as a student.</p>
+            </h3>
         </Div>
 
         <div class="navigation">
@@ -28,104 +32,131 @@
         <div class="main-contente">
 
             <div class="table">
-                     <h2>Student Registration Form</h2>
-                     <br>
-                     <form action="#" method="post">
-                <table width="85%" align="center">
-                    <tr>
-                        <td><p>First Name</p></td>
-                        <td>:</td>
-                        <td><input type="text" name="first_name" value="Enter The Full Name" required></td>
-                    </tr>
-                    <tr>
-                        <td><p>Password</p></td>
-                        <td>:</td>
-                        <td><input type="password" name="password" required></td>
-                    </tr>
-                    <tr>
-                        <td><p>Gender</p></td>
-                        <td>:</td>
-                        <td>
-                            <input type="radio" name="gender" value="Male">Male
-                            <input type="radio" name="gender" value="Female">Female
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><p>Subscribe to Newsletter</p></td>
-                        <td>:</td>
-                        <td><input type="checkbox" name="Subscribe"></td>
-                    </tr>
-                    <tr>
-                        <td><p>State</p></td>
-                        <td>:</td>
-                        <td>
-                            <select name="state" id="">
-                            <option value="">Select your state</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><p>Upload Resume</p></td>
-                        <td>:</td>
-                        <td><input type="file" name="resume"></td>
-                    </tr>
-                    <tr>
-                        <td><p>Address</p></td>
-                        <td>:</td>
-                        <td>
+                <h2>Student Registration Form</h2>
+                <br>
+                <form action="#" method="post">
+                    <table width="85%" align="center">
+                        <tr>
+                            <td>
+                                <p>First Name</p>
+                            </td>
+                            <td>:</td>
+                            <td><input type="text" name="first_name" placeholder="Enter The Full Name" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Password</p>
+                            </td>
+                            <td>:</td>
+                            <td><input type="password" name="password" placeholder="Enter a Password" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Gender</p>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" name="gender" value="Male">Male
+                                <input type="radio" name="gender" value="Female">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Subscribe to Newsletter</p>
+                            </td>
+                            <td>:</td>
+                            <td><input type="checkbox" name="Subscribe"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>State</p>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <select name="state" id="">
+                                    <option value="">Select your state</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Kerala">Kerala</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Upload Resume</p>
+                            </td>
+                            <td>:</td>
+                            <td><input type="file" name="resume"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Address</p>
+                            </td>
+                            <td>:</td>
+                            <td>
 
-                            <textarea name="address" rows="4"></textarea>
+                                <textarea name="address" rows="4"></textarea>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><p>Date of Birth</p></td>
-                        <td>:</td>
-                        <td><input type="date" name="dob"></td>
-                    </tr>
-                    <tr>
-                        <td><p>Preferred Interview Time</p></td>
-                        <td>:</td>
-                        <td><input type="time" name="time"></td>
-                    </tr>
-                    <tr>
-                        <td><p>Marks</p></td>
-                        <td>:</td>
-                        <td><input type="number" name="marks"></td>
-                    </tr>
-                    <tr>
-                    <td colspan="3" align="center">
-                        <input type="submit" value="Submit" class="bettan">
-                        <input type="reset" value="Reset" class="bettan">
-                    </td> 
-                    </tr>
-                </table>
-            </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Date of Birth</p>
+                            </td>
+                            <td>:</td>
+                            <td><input type="date" name="dob"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Preferred Interview Time</p>
+                            </td>
+                            <td>:</td>
+                            <td><input type="time" name="time"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Marks</p>
+                            </td>
+                            <td>:</td>
+                            <td><input type="number" name="marks"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <input type="submit" value="Submit" class="bettan">
+                                <input type="reset" value="Reset" class="bettan">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </div>
 
-        <div class="more-information">
-            <h2>More Information</h2>
-            <br>
-            <p> ➤ Explore govermment job opportunities on the official OJAS Website:</p>
+            <div class="more-information">
+                <h2>More Information</h2>
+                <br>
+                <p> ➤ Explore govermment job opportunities on the official OJAS Website:</p>
 
-            <div class="scroll">
-                <img class="OJASWebsitePhoto" src="assets\images\ojas_website.png" alt="OJAS Website">
+                <div class="scroll" style="height: 600px; width: 400px; overflow: scroll;">
+                    <img class="OJASWebsitePhoto" src="assets\images\webphoto.png" alt="OJAS Website">
+                </div>
+                <br>
+                <button>
+                    <a href="Cuisine.html">⇐ Back to Cuisine</a>
+                    <a href="Home.html">⇐ Back to Home</a>
+                </button>
+                <br>
             </div>
-            <br>
-            <button>
-                <a href="Home.html">⇐ Back to Home</a>
-            </button>
-            <br>
-        </div>
 
         </div>
-        
+
         <div class="footer">
-            <p><i>Contact us at <a href="https://www.incredible-india.org/">info@incredibleindia.com</a></i> | © 2025 Incredible India Project. All rights reserved. | Follow us on : <a href="">Facebook</a> / <a href="">Twitter</a></p>
+            <p><i>Contact us at <a href="https://www.incredible-india.org/">info@incredibleindia.com</a></i> | © 2025
+                Incredible India Project. All rights reserved. | Follow us on : <a href="">Facebook</a> / <a
+                    href="">Twitter</a></p>
         </div>
-        
+
     </div>
 </body>
+
 </html>
