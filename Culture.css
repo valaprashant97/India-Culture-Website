@@ -1,16 +1,150 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.container{
-    height: auto;
+
+.container {
     width: 100vw;
+    font-family: Arial, sans-serif;
+    background: white;
 }
-.header{
+
+p,
+li {
+    color: #6c757d;
+}
+
+li b {
+    color: black;
+}
+
+.header {
     height: 10%;
     width: 100%;
     background-color: orange;
     text-align: center;
-    padding: calc(10px + 1vh);
+    padding: 15px;
+}
+
+.navigation-bar {
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navigation-links li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: yellow;
+    display: inline;
+    margin: 15px;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.traditional-attire,
+.traditional-saree,
+.languages-spoken,
+.festivals-celebrations {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+table {
+    height: 200px;
+    width: 80%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+h4 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 400px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #e3e3e3;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+.footer {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+}
+
+.footer p {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
 }

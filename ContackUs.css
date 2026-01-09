@@ -1,16 +1,205 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.container{
-    height: auto;
+
+body {
+    background: #eef2ff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
     width: 100vw;
+    font-family: Arial, sans-serif;
+    background: white;
 }
-.header{
+
+.header {
     height: 10%;
     width: 100%;
     background-color: orange;
     text-align: center;
     padding: calc(10px + 1vh);
+}
+h3{
+     color: #6c757d;
+}
+.navigation-bar {
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navigation-links li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: yellow;
+    display: inline;
+    margin: 15px;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.student-registration,
+.more-information {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.student-registration {
+    width: 550px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.student-registration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+.student-registration table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 12px;
+}
+
+.student-registration td p {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.student-registration input,
+.student-registration select,
+.student-registration textarea {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.student-registration input[type="radio"],
+.student-registration input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.student-registration textarea {
+    resize: none;
+}
+
+.student-registration input:focus,
+.student-registration select:focus,
+.student-registration textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.bettan {
+    padding: 9px 22px;
+    margin: 6px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bettan:hover {
+    background: #1e40af;
+}
+
+.more-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.more-information p {
+    text-align: center;
+    margin: 20px;
+}
+
+.scroll {
+    height: 200px;
+    width: 20vw;
+    overflow-y: scroll;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #e3e3e3;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+.footer {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+}
+
+.footer p {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
 }
