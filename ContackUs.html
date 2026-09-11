@@ -3,21 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" author="Vala Prashant" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vala Prashant">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
-    <title>Document</title>
     <link rel="stylesheet" href="ContackUs.css">
 </head>
 
 <body>
     <div class="container">
 
-        <Div class="header">
+        <div class="header">
             <h1>Contact Us</h1>
-            <h3>
-                Please fill out the form below for any inquiries or to register as a student.
-            </h3>
-        </Div>
+            <h3>Please fill out the form below for any inquiries or to register as a student.</h3>
+        </div>
 
         <div class="navigation-bar">
             <ul class="navigation-links">
@@ -33,46 +31,46 @@
 
             <div class="student-registration">
                 <h2>Student Registration Form</h2>
-                <form action="#" method="post">
+                <form action="ContackUs.html" method="post" enctype="multipart/form-data">
                     <table>
                         <tr>
                             <td>
-                                <p>First Name</p>
+                                <label for="first-name">First Name</label>
                             </td>
                             <td>:</td>
-                            <td><input type="text" name="first_name" placeholder="Enter The Full Name" required></td>
+                            <td><input id="first-name" type="text" name="first_name" placeholder="Enter The Full Name" required></td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Password</p>
+                                <label for="password">Password</label>
                             </td>
                             <td>:</td>
-                            <td><input type="password" name="password" placeholder="Enter a Password" required></td>
+                            <td><input id="password" type="password" name="password" placeholder="Enter a Password" required></td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Gender</p>
+                                <span>Gender</span>
                             </td>
                             <td>:</td>
                             <td>
-                                <input type="radio" name="gender" value="Male">Male
-                                <input type="radio" name="gender" value="Female">Female
+                                <label><input type="radio" name="gender" value="Male"> Male</label>
+                                <label><input type="radio" name="gender" value="Female"> Female</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Subscribe to Newsletter</p>
+                                <label for="subscribe">Subscribe to Newsletter</label>
                             </td>
                             <td>:</td>
-                            <td><input type="checkbox" name="Subscribe"></td>
+                            <td><input id="subscribe" type="checkbox" name="Subscribe"></td>
                         </tr>
                         <tr>
                             <td>
-                                <p>State</p>
+                                <label for="state">State</label>
                             </td>
                             <td>:</td>
                             <td>
-                                <select name="state" id="">
+                                <select name="state" id="state">
                                     <option value="">Select your state</option>
                                     <option value="Gujarat">Gujarat</option>
                                     <option value="Maharashtra">Maharashtra</option>
@@ -84,45 +82,45 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>Upload Resume</p>
+                                <label for="resume">Upload Resume</label>
                             </td>
                             <td>:</td>
-                            <td><input type="file" name="resume"></td>
+                            <td><input id="resume" type="file" name="resume"></td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Address</p>
+                                <label for="address">Address</label>
                             </td>
                             <td>:</td>
                             <td>
 
-                                <textarea name="address" rows="4"></textarea>
+                                <textarea id="address" name="address" rows="4"></textarea>
 
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Date of Birth</p>
+                                <label for="dob">Date of Birth</label>
                             </td>
                             <td>:</td>
-                            <td><input type="date" name="dob"></td>
+                            <td><input id="dob" type="date" name="dob"></td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Preferred Interview Time</p>
+                                <label for="interview-time">Preferred Interview Time</label>
                             </td>
                             <td>:</td>
-                            <td><input type="time" name="time"></td>
+                            <td><input id="interview-time" type="time" name="time"></td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Marks</p>
+                                <label for="marks">Marks</label>
                             </td>
                             <td>:</td>
-                            <td><input type="number" name="marks"></td>
+                            <td><input id="marks" type="number" name="marks" min="0" max="100"></td>
                         </tr>
                         <tr>
-                            <td colspan="3" align="center">
+                            <td colspan="3">
                                 <input type="submit" value="Submit" class="bettan">
                                 <input type="reset" value="Reset" class="bettan">
                             </td>
@@ -135,7 +133,7 @@
                 <h2>More Information</h2>
                 <p> Explore govermment job opportunities on the official OJAS Website:</p>
                 <div class="scroll">
-                    <img class="OJASWebsitePhoto" src="assets\images\webphoto.png" alt="OJAS Website" style="width: 200px;">
+                    <img class="OJASWebsitePhoto" src="assets/images/webphoto.png" alt="OJAS Website" style="width: 200px;">
                 </div>
                 <div class="button">
                     <a href="Cuisine.html" class="btn">
@@ -146,7 +144,7 @@
                     </a>
 
                     <a href="Landmarks.html" class="btn">
-                        Explore Home
+                        Explore Landmarks
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                             <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
                         </svg>
@@ -157,9 +155,9 @@
         </div>
 
         <div class="footer">
-            <p><i>Contact us at :<a href="https://www.incredible-india.org/">info@incredibleindia.com</a></i> | © 2025
-                Incredible India Project. All rights reserved. | Follow us on : <a href="">Facebook</a> / <a
-                    href="">Twitter</a></p>
+            <p><i>Contact us at :<a href="mailto:info@incredibleindia.com">info@incredibleindia.com</a></i> | © 2025
+                Incredible India Project. All rights reserved. | Follow us on : <a href="https://www.facebook.com/" rel="noopener">Facebook</a> / <a
+                    href="https://twitter.com/" rel="noopener">Twitter</a></p>
         </div>
 
     </div>

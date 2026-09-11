@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
     font-family: Arial, sans-serif;
     background: white;
 }
@@ -38,7 +39,7 @@ h3{
 }
 
 .navigation-links li,
-a {
+.navigation-links a {
     list-style: none;
     text-decoration: none;
     color: yellow;
@@ -62,7 +63,7 @@ li {
 
 
 .student-registration {
-    width: 550px;
+    width: min(550px, calc(100% - 20px));
     margin: 40px auto;
     background: #ffffff;
     padding: 25px 30px;
@@ -82,10 +83,16 @@ li {
     border-spacing: 12px;
 }
 
-.student-registration td p {
+.student-registration td p,
+.student-registration td label,
+.student-registration td span {
     margin: 0;
     font-weight: 600;
     color: #333;
+}
+
+.student-registration td[colspan="3"] {
+    text-align: center;
 }
 
 
@@ -136,7 +143,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 550px;
+    width: min(550px, calc(100% - 20px));
     margin: 30px auto;
     background: #ffffff;
     padding: 25px 30px;
@@ -202,4 +209,41 @@ li {
     color: orange;
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .navigation-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .navigation-links a {
+        margin: 6px;
+    }
+
+    .navigation-bar {
+        height: auto;
+        min-height: 8vh;
+        padding: 8px;
+    }
+
+    .student-registration,
+    .more-information {
+        padding: 20px 10px;
+    }
+
+    .student-registration table {
+        border-spacing: 6px;
+    }
+
+    .student-registration td {
+        overflow-wrap: anywhere;
+    }
+
+    .button {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 }

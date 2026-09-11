@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
     font-family: Arial, sans-serif;
     background: white;
 }
@@ -38,7 +39,7 @@ li b{
 }
 
 .navigation-links li,
-a {
+.navigation-links a {
     list-style: none;
     text-decoration: none;
     color: yellow;
@@ -63,13 +64,14 @@ li {
 
 img {
     width: 400px;
+    max-width: 100%;
     border-radius: 15px;
     margin: 10px;
+    transition: transform 0.3s;
 }
 
 img:hover {
     transform: scale(1.05);
-    transition: 0.3s;
 }
 
 .button {
@@ -118,4 +120,10 @@ img:hover {
     color: orange;
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img {
+        transition: none;
+    }
 }
